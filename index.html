@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text Editor</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+                rel="stylesheet">
+</head>
+
+<body>
+
+        <div id="center">
+                <div id="try">
+                        <button onclick="formatText(this,'bold')"><img src="icons8-bold-50 (1).png" alt="Bold"></button>
+                        <button onclick="formatText(this,'italic')"><img src="icons8-italic-50.png"
+                                        alt="Italic"></button>
+                        <button onclick="formatText(this,'underline')"><img src="icons8-underline-50 (1).png"
+                                        alt="Underline"></button>
+
+
+                        <button id="colorPickerBtn" onclick="color()"><img src="icons8-a-50.png" alt=""
+                                        id="FC"></button>
+                        <input type="color" id="colorPicker" style="visibility: hidden;">
+
+
+                        <button onclick="alignment(this,'right')" class="aliB"><img src="icons8-align-right-50.png"
+                                        alt="Right"></button>
+                        <button onclick="alignment(this,'left')" class="aliB"><img src="icons8-align-left-50 (1).png"
+                                        alt="Left"></button>
+                        <button onclick="alignment(this,'center')" class="aliB"><img src="icons8-align-center-50.png"
+                                        alt="Center"></button>
+                        <button onclick="alignment(this,'justify')" class="aliB"><img src="icons8-align-justify-50.png"
+                                        alt="justify"></button>
+
+                        <button onclick="redo()" ><img src="icons8-redo-30.png" alt="redo" id="redo"></button>
+                        <button onclick="undo()" ><img src="icons8-undo-30.png" alt="undo" id="undo"></button>
+
+
+                </div>
+        </div>
+
+        <div id="editor" contenteditable="true"></div>
+
+
+</body>
+
+</html>
